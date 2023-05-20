@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hospital-system';
+  title = 'angular-intro';
+
+  someValue: string ="";
+  someValues: Array<string> = new Array<string>();
+
+  ClickLogic(){
+    console.log(this.someValue)
+    this.someValues.push(this.someValue)
+    this.someValue=""
+  }
 }
